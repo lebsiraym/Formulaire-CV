@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Bagdad</title>
+</head>
+<body>
+    <h1>FORMULAIRE DE CV</h1>
+    <form action="somthing.php" method="post" enctype="multipart/form-data">
+
+        <label for="name"><strong>Nom complet :</strong></label>
+        <input id="name" type="text" placeholder="Entrez votre nom complet" minlength="4" maxlength="30" required><br><br>
+
+        <label for="Email"><strong>Email :</strong></label>
+        <input id="Email" type="email" placeholder="votreemail@gmail.com" required><br><br>
+
+        <label for="City"><strong>Ville :</strong></label>
+        <input id="City" type="text" placeholder="Ville de résidence" required><br><br>
+
+        <label for="Phone"><strong>Numéro de téléphone :</strong></label>
+        <input id="Phone" type="tel" placeholder="00 00 00 00 00" maxlength="10" required><br><br>
+
+        <label for="Birth"><strong>Date de naissance :</strong></label>
+        <input id="Birth" type="date" required><br><br>
+
+        <label for="You"><strong>Parlez de vous :</strong></label><br>
+        <textarea name="You" id="Comment" rows="6" placeholder="Introduction, objectifs, etc." required></textarea><br><br>
+
+        <p>
+            <strong>Langues :</strong><br>
+            <input id="Ar" type="checkbox" value="Arabe">
+            <label for="Ar">Arabe</label><br>
+
+            <input id="En" type="checkbox" value="Anglais">
+            <label for="En">Anglais</label><br>
+
+            <input id="Fr" type="checkbox" value="Français">
+            <label for="Fr">Français</label><br>
+        </p>    
+
+        <label for="School"><strong>École :</strong></label>
+        <select name="School" id="School" required>
+            <option value="ESGEN">ESGEN</option>
+            <option value="ENSSEA">ENSSEA</option>
+            <option value="EHEC">EHEC</option>
+            <option value="ESC">ESC</option>
+            <option value="ENSM">ENSM</option>
+        </select><br><br>
+
+        <label for="Picture"><strong>Photo :</strong></label><br>
+        <input type="file" id="Picture" accept="image/png, image/jpeg" required><br><br>
+
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Réinitialiser"><br>
+    </form>
+</body>
+</html>
